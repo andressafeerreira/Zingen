@@ -16,11 +16,14 @@
 
 .container { 
   --max-widht: 375px;
+  display: inline;
   width: min(var(--max-widht), 100% - var(--px-lg) * 2);
+  
+  
 }
 
 .desktop-only {
-  display: none;
+
 }
 
 .even-columns {
@@ -32,15 +35,23 @@
   display: flex;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .gap-1 {
   gap: 1rem;
+}
+
+.gap-1\.5 {
+  gap: 1.5rem;
 }
 
 .grid {
   display: grid;
 }
 
-@media (widht >= 80em) {
+/*@media (widht >= 80em) {
   .container {
     --max-widht: 80rem;
   }
